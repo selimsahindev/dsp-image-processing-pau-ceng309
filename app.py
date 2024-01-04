@@ -29,6 +29,7 @@ cv2.imshow("Gaussian Blur", gaussian_blur)
 cv2.imshow("All", np.hstack([original, contrast_stretching, gaussian_blur]))
 
 # Save all of them in a folder named 'outputs'
+cv2.imwrite("outputs/original.jpg", original)
 cv2.imwrite("outputs/contrast_stretching.jpg", contrast_stretching)
 cv2.imwrite("outputs/gaussian_blur.jpg", gaussian_blur)
 cv2.imwrite("outputs/all.jpg", np.hstack([original, contrast_stretching, gaussian_blur]))
